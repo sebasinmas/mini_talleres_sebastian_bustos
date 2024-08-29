@@ -1,3 +1,3 @@
-## En este repositorio las ramas corresponden a la entrega de los mini talleres del ramo Proyecto de Aplicación
+## En esta rama se entregará el HTML que corresponde a esta noticia .
 
 Este primer readme cumple la función de poner un archivo en el repositorio.
