@@ -1,3 +1,3 @@
-## En este repositorio las ramas corresponden a la entrega de los mini talleres del ramo Proyecto de Aplicación
+## Mini taller semana 4
 
-Este primer readme cumple la función de poner un archivo en el repositorio.
+En este taller se evaluará el CSS para intentar replicar la foto de la semana 3.
