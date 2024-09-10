@@ -32,8 +32,7 @@
 .cuerpo-noticia {
     font-size: 1.1rem;
     line-height: 1.6rem;
-    max-width: 80vw;
-    margin: 20px auto;
+    max-width: 70vw;
 }
 
 .cuerpo-noticia p {
@@ -43,13 +42,13 @@
 
 .imagen-contextual-contenedor {
     display: block;
-    width: 100%;
+    width: 70vw;
     margin: 20px 0;
 }
 
 .imagen-contextual-contenedor img {
     display: block;
-    width: 100%;
+    width:69.8vw;
     height: auto;
     border: solid 1px var(--color-del-borde);
 }
@@ -57,6 +56,8 @@
 .tarjeta {
     padding: 5px;
     border: solid 3px var(--color-del-borde);
+    border-bottom: solid 5px var(--color-del-borde);
+
     border-top: none;
     text-align: left;
 }
