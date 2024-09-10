@@ -3,7 +3,7 @@
 }
 
 * {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 #marca {
@@ -13,80 +13,70 @@
 }
 
 .titulo {
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
 }
 
 .bajada {
-    font-size: 1.4rem;
-    font-weight: 100;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #555;
 }
 
 .detalles {
     font-size: 0.9rem;
+    color: #999;
 }
 
 .cuerpo-noticia {
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-between;
-    max-width: 30vw;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    max-width: 80vw;
+    margin: 20px auto;
 }
-.cuerpo-noticia p{
+
+.cuerpo-noticia p {
     display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
 .imagen-contextual-contenedor {
-    display: inline-block;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.imagen-contextual-contenedor .tarjeta p {
-    margin: 0px;
-}
-
-.imagen-contextual-contenedor .tarjeta {
-    margin: 0px;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .imagen-contextual-contenedor img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    border: solid 1px var(--color-del-borde);
 }
 
-.imagen-contextual-contenedor .tarjeta {
-    padding: 0px;
-    margin-top: 0px;
-    border-left: solid 3px var(--color-del-borde);
-    border-right: solid 3px var(--color-del-borde);
-    border-bottom: solid 7px var(--color-del-borde);
-
+.tarjeta {
+    padding: 5px;
+    border: solid 3px var(--color-del-borde);
+    border-top: none;
+    text-align: left;
 }
 
-.tarjeta .texto-alternativo {
-    padding-top: 0.8vh;
+.texto-alternativo {
+    font-size: 0.9rem;
     padding-left: 1vw;
+    margin: 5px 0;
 }
 
 .fuente {
     color: #112167;
     text-align: right;
-    padding-right: 1vw;
-    padding-bottom: 0.4vh;
-
-}
-
-.titular {
-    display: block;
-    margin-bottom: 2vh;
+    font-size: 0.8rem;
+    margin-top: 2px;
 }
 
 .noticias-relacionadas {
     min-width: 500px;
     max-height: 400px;
     background-color: red;
+    margin: 10px 0;
 }
