@@ -211,32 +211,35 @@ body {
 /* Ahora la barra de categorías */
 
 .categories {
-  position: -webkit-sticky; /* Para compatibilidad con navegadores antiguos */
+  position: -webkit-sticky;
   position: sticky;
-  top: 0; /* Fijar el header en la parte superior de la página */
-  background-color: #e6f8e3; /* Para que sea visible sobre otros elementos */
-  z-index: 1000; /* Para asegurarse de que el header esté por encima del contenido */
+  top: 5.366vw;
+  background-color: #e6f8e3;
+  z-index: 1001;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 .categories-container {
   display: flex;
-  justify-content: space-between; /* Espaciado entre la parte izquierda y derecha */
+  justify-content: space-between;
   align-items: center;
-  background-color: #ecf8e7; /* Color de fondo del contenedor */
+  background-color: #ecf8e7;
   padding: 0px 20px;
   width: 100%;
 }
 .categories-dropwdown {
-    margin-left: 90px;
-    padding: 0;
+  margin-left: 90px;
+  padding: 0;
 }
 
 .menu-left {
   display: flex;
-  gap: 10px; /* Espaciado entre los botones */
+  gap: 10px;
 }
 
 .btn {
@@ -260,14 +263,14 @@ body {
 }
 
 .btn svg {
-  margin-right: 8px; /* Espaciado entre el icono y el texto */
+  margin-right: 8px;
 }
 
 /* Contenedor derecho (links) */
 .menu-right {
   display: flex;
   align-items: right;
-  gap: 20px; /* Espaciado entre los enlaces */
+  gap: 20px;
 }
 
 .menu-right a {
@@ -277,7 +280,6 @@ body {
   font-weight: bold;
 }
 
-/* Nuevo Badge */
 .new-badge {
   background-color: #128920;
   color: white;
@@ -291,15 +293,81 @@ body {
   text-decoration: underline;
 }
 
-
 /* CONTENIDO AL FIN ;_;  */
 
-.content{
-    width: 100%;
-    padding: 30px 30px;
+.banner {
+  margin: 0;
+  padding: 16px 32px;
 }
-.content img{
-    height: fit-content;
-    max-width: 1440px;
-    max-height: 273px;
+#landing-banner {
+  max-width: 100%; /* Limita el ancho también */
+  height: auto; /* Mantén las proporciones */
+  width: auto; /* Ajuste automático según el contenedor */
+  display: block; /* Asegura que no haya espacios extra alrededor de la imagen */
+  object-fit: contain; /* Mantiene la imagen dentro de su contenedor sin recortes */
+}
+
+/* seccion de celdas */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de tamaño flexible */
+  gap: 20px; /* Espacio entre imágenes */
+  margin: 30px;
+}
+
+.grid-section img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el espacio disponible en la celda */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  object-fit: cover; /* Asegura que la imagen no se distorsione al ajustarse */
+}
+/* Ofertas prime */
+.prime-sales {
+  margin: 30px 30px;
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio máximo entre los dos spans */
+  align-items: center; /* Alinea los elementos verticalmente al centro (opcional) */
+}
+.prime-sales span {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.green-underline {
+  margin: 0;
+  text-decoration: underline;
+  color: #24a448;
+  cursor: pointer;
+}
+.emphasis {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* carrusel */
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  margin: 0 30px;
+}
+
+.carousel-item {
+  scroll-snap-align: start;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+.carousel-item p {
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el espacio disponible en la celda */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  object-fit: cover; /* Asegura que la imagen no se distorsione al ajustarse */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
