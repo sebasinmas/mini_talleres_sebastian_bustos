@@ -1,3 +1,2 @@
-## En este repositorio las ramas corresponden a la entrega de los mini talleres del ramo Proyecto de Aplicación
-
-Este primer readme cumple la función de poner un archivo en el repositorio.
+## En este repositorio se encuentra el desarrollo del mini taller semana 5
+Este readme se actualiza con la descripción de la branch!
