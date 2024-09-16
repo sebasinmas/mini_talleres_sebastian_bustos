@@ -1,0 +1,85 @@
+:root {
+  --preheader-hover-color: rgba(26, 26, 26, 0.7);
+  --preheader-background-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Ahora es todo para asemejar el preheader */
+
+.pre-header {
+  width: 100%;
+  background-color: var(--preheader-background-color);
+}
+.pre-header-container {
+  width: 100%;
+  height: 29px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+.drop-down-svg {
+  margin-left: 10px;
+}
+
+.pre-header-container a,
+.pre-header-sub-menu {
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: inline-flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  padding: 0 12px 0 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pre-header-container a:first-child {
+  display: inline-flex;
+  margin-right: 2.382vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  padding: 0 12px 0 12px;
+  text-decoration: none;
+}
+.pre-header-container a:hover,
+.pre-header-sub-menu:hover {
+  background-color: var(--preheader-hover-color);
+}
+
+/* Ahora todo es para asemejar la barra de busqueda  */
+
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.header-container {
+  max-height: 68px;
+  overflow: hidden;
+}
+
+.header-container h1 {
+  
+}
