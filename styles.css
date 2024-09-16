@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Ahora es todo para asemejar el preheader */
@@ -71,15 +72,140 @@ body {
 /* Ahora todo es para asemejar la barra de busqueda  */
 
 .header {
-  width: 100%;
-  background-color: #fff;
+    position: -webkit-sticky; /* Para compatibilidad con navegadores antiguos */
+    position: sticky;
+    top: 0; /* Fijar el header en la parte superior de la página */
+    background-color: white; /* Para que sea visible sobre otros elementos */
+    z-index: 1000; /* Para asegurarse de que el header esté por encima del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .header-container {
-  max-height: 68px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 20px;
+  width: 100%;
 }
 
 .header-container h1 {
-  
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans";
+  color: #1fa02f;
+  font-size: 3rem;
 }
+
+.delivery-mode {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 5px 10px; 
+  }
+  
+  #pin {
+    margin-right: 10px; 
+  }
+  
+  #delivery-text {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+  }
+  
+  #delivery-text span {
+    font-size: 14px; 
+    color: #333;
+  }
+  
+  #delivery-text strong {
+    font-weight: bold;
+    font-size: 16px; 
+    color: #000;
+  }
+  
+  #delivery-svg {
+    width: 9px; 
+    height: 7px;
+    margin-left: 10px; 
+  }
+  
+  #delivery-svg, #pin {
+    display: block;
+  }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  max-height: 37.6px;
+}
+/* Usuario */
+.user-menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+    color: #333; 
+    padding: 0; /
+  }
+  
+  .user-menu svg {
+    margin-right: 8px; 
+  }
+  
+  .user-menu span {
+    display: block;
+    margin-right: 4px; 
+  }
+  
+  .user-menu strong {
+    display: block;
+    font-weight: bold;
+    color: #000; 
+  }
+  
+  /* .user-menu .drop-down-svg {
+    margin-left: 4px; 
+  } */
+  
+  .user-menu svg.circle-svg {
+    fill: #128920; 
+  }
+  
+/* Usuario */
+.cart-icon svg {
+  font-size: 24px;
+  margin-left: 20px;
+}
+#pin{
+    display: inline-block;
+    vertical-align: center;
+}
+
+/* Ahora la barra de categorías */
+
