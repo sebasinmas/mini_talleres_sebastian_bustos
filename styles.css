@@ -72,15 +72,15 @@ body {
 /* Ahora todo es para asemejar la barra de busqueda  */
 
 .header {
-    position: -webkit-sticky; /* Para compatibilidad con navegadores antiguos */
-    position: sticky;
-    top: 0; /* Fijar el header en la parte superior de la página */
-    background-color: white; /* Para que sea visible sobre otros elementos */
-    z-index: 1000; /* Para asegurarse de que el header esté por encima del contenido */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  position: -webkit-sticky; /* Para compatibilidad con navegadores antiguos */
+  position: sticky;
+  top: 0; /* Fijar el header en la parte superior de la página */
+  background-color: white; /* Para que sea visible sobre otros elementos */
+  z-index: 1000; /* Para asegurarse de que el header esté por encima del contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .header-container {
@@ -102,42 +102,43 @@ body {
 }
 
 .delivery-mode {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 5px 10px; 
-  }
-  
-  #pin {
-    margin-right: 10px; 
-  }
-  
-  #delivery-text {
-    display: flex;
-    flex-direction: column; 
-    text-align: left;
-  }
-  
-  #delivery-text span {
-    font-size: 14px; 
-    color: #333;
-  }
-  
-  #delivery-text strong {
-    font-weight: bold;
-    font-size: 16px; 
-    color: #000;
-  }
-  
-  #delivery-svg {
-    width: 9px; 
-    height: 7px;
-    margin-left: 10px; 
-  }
-  
-  #delivery-svg, #pin {
-    display: block;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+#pin {
+  margin-right: 10px;
+}
+
+#delivery-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#delivery-text span {
+  font-size: 14px;
+  color: #333;
+}
+
+#delivery-text strong {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+#delivery-svg {
+  width: 9px;
+  height: 7px;
+  margin-left: 10px;
+}
+
+#delivery-svg,
+#pin {
+  display: block;
+}
 
 .search-bar {
   display: flex;
@@ -163,49 +164,133 @@ body {
 }
 /* Usuario */
 .user-menu {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif; 
-    font-size: 14px;
-    color: #333; 
-    padding: 0; /
-  }
-  
-  .user-menu svg {
-    margin-right: 8px; 
-  }
-  
-  .user-menu span {
-    display: block;
-    margin-right: 4px; 
-  }
-  
-  .user-menu strong {
-    display: block;
-    font-weight: bold;
-    color: #000; 
-  }
-  
-  /* .user-menu .drop-down-svg {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 0;
+}
+
+.user-menu svg {
+  margin-right: 8px;
+}
+
+.user-menu span {
+  display: block;
+  margin-right: 4px;
+}
+
+.user-menu strong {
+  display: block;
+  font-weight: bold;
+  color: #000;
+}
+
+/* .user-menu .drop-down-svg {
     margin-left: 4px; 
   } */
-  
-  .user-menu svg.circle-svg {
-    fill: #128920; 
-  }
-  
+
+.user-menu svg.circle-svg {
+  fill: #128920;
+}
+
 /* Usuario */
 .cart-icon svg {
   font-size: 24px;
   margin-left: 20px;
 }
-#pin{
-    display: inline-block;
-    vertical-align: center;
+#pin {
+  display: inline-block;
+  vertical-align: center;
 }
 
 /* Ahora la barra de categorías */
+
+.categories {
+  position: -webkit-sticky; /* Para compatibilidad con navegadores antiguos */
+  position: sticky;
+  top: 0; /* Fijar el header en la parte superior de la página */
+  background-color: #e6f8e3; /* Para que sea visible sobre otros elementos */
+  z-index: 1000; /* Para asegurarse de que el header esté por encima del contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.categories-container {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre la parte izquierda y derecha */
+  align-items: center;
+  background-color: #ecf8e7; /* Color de fondo del contenedor */
+  padding: 0px 20px;
+  width: 100%;
+}
+.categories-dropwdown {
+    margin-left: 90px;
+    padding: 0;
+}
+
+.menu-left {
+  display: flex;
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-categories {
+  background-color: #128920;
+  color: white;
+}
+
+.btn-offers {
+  background-color: #f9e37e;
+  color: #000;
+}
+
+.btn svg {
+  margin-right: 8px; /* Espaciado entre el icono y el texto */
+}
+
+/* Contenedor derecho (links) */
+.menu-right {
+  display: flex;
+  align-items: right;
+  gap: 20px; /* Espaciado entre los enlaces */
+}
+
+.menu-right a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Nuevo Badge */
+.new-badge {
+  background-color: #128920;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.menu-right a:hover {
+  text-decoration: underline;
+}
+
+
+/* CONTENIDO AL FIN ;_;  */
 
