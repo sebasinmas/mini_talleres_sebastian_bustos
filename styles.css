@@ -294,3 +294,12 @@ body {
 
 /* CONTENIDO AL FIN ;_;  */
 
+.content{
+    width: 100%;
+    padding: 30px 30px;
+}
+.content img{
+    height: fit-content;
+    max-width: 1440px;
+    max-height: 273px;
+}
