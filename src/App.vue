@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
+import ListaAlumnos from './components/ListaAlumnos.vue';
 
 const estudiantes = ref([]);
 const respuesta = ref(null);
@@ -53,7 +54,7 @@ const procesar = () => {
 </script>
 
 <template>
-  <div class="app-body">
+  <div class="app-body ">
     <span>Nota 1: </span>
     <input v-model.number="nota1" type="number" step="0.1" min="1.0" max="7.0" />
     <span>Nota 2: </span>
@@ -66,9 +67,13 @@ const procesar = () => {
     <input v-model.number="nota5" type="number" step="0.1" min="1.0" max="7.0" />
     <span>Nota 6: </span>
     <input v-model.number="nota6" type="number" step="0.1" min="1.0" max="7.0" />
-    <button @click="procesar">Calcular Promedio</button>
-    <p>{{ respuesta }}</p>
+    <button style="background-color: hsla(160, 100%, 37%, 1); border: none;" @click="procesar">
+      Calcular Promedio
+    </button>
+    <p style="background-color: hsla(160, 100%, 37%, 1); color: black;">{{ respuesta }}</p>
   </div>
+
+  <ListaAlumnos :arrayEstudiantes="estudiantes"></ListaAlumnos>
 </template>
 
 <style scoped>

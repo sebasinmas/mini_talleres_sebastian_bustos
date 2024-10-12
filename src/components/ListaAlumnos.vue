@@ -1,6 +1,11 @@
 <script setup>
 import { defineProps } from 'vue';
-defineProps(['arrayEstudiantes'])
+defineProps({
+    arrayEstudiantes: {
+        type: Array,
+        Required: true
+    }
+})
 </script>
 
 <template>
