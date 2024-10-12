@@ -72,11 +72,21 @@ const procesar = () => {
     </button>
     <p style="background-color: hsla(160, 100%, 37%, 1); color: black;">{{ respuesta }}</p>
   </div>
-
-  <ListaAlumnos :arrayEstudiantes="estudiantes"></ListaAlumnos>
+  <div class="seccion-alumnos">
+    <ListaAlumnos :arrayEstudiantes="estudiantes"></ListaAlumnos>
+  </div>
 </template>
 
 <style scoped>
+.seccion-alumnos {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #3a3a3a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .center {
   box-sizing: border-box;
   margin: 0;

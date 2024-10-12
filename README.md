@@ -1,6 +1,6 @@
 # calculadora_de_promedio
 
-This template should help get you started developing with Vue 3 in Vite.
+En este mini taller se crea una calculadora con reactividad y se agrega una pequeña vista abajo para los datos de estudiantesDb.json. utilizar `json-server --watch .\estudiantesDb.json`
 
 ## Recommended IDE Setup
 
