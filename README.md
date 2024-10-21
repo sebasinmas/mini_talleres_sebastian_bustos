@@ -1,6 +1,6 @@
-# calculadora_de_promedio
+# mini_taller_semana_10
 
-En este mini taller se crea una calculadora con reactividad y se agrega una pequeña vista abajo para los datos de estudiantesDb.json. utilizar `json-server --watch .\estudiantesDb.json`
+¡En esta actividad vamos a ver si logras conseguir la contraseña!
 
 ## Recommended IDE Setup
 
