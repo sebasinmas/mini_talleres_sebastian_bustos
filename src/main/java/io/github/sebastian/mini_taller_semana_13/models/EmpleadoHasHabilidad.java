@@ -10,13 +10,15 @@ import java.util.Objects;
 @Data
 public class EmpleadoHasHabilidad {
     @EmbeddedId
-    private EmpleadoHabilidadId id;
+    private EmpleadoHabilidadId id = new EmpleadoHabilidadId();
     @ManyToOne
-    @JoinColumn(name = "empleado_id", insertable = false, updatable = false)
+    @MapsId("empleadoId")
+    @JoinColumn(name = "empleado_id")
     private Empleado empleado;
 
     @ManyToOne
-    @JoinColumn(name = "habilidad_id", insertable = false, updatable = false)
+    @MapsId("habilidadId")
+    @JoinColumn(name = "habilidad_id")
     private Habilidad habilidad;
 
     // Se pueden añadir más atributos
@@ -26,12 +28,12 @@ public class EmpleadoHasHabilidad {
 @Data
 class EmpleadoHabilidadId implements Serializable {
 
-    private Long empleadoId;
-    private Long habilidadId;
+    private int empleadoId;
+    private int habilidadId;
 
     public EmpleadoHabilidadId() {}
 
-    public EmpleadoHabilidadId(Long empleadoId, Long habilidadId) {
+    public EmpleadoHabilidadId(int empleadoId, int habilidadId) {
         this.empleadoId = empleadoId;
         this.habilidadId = habilidadId;
     }
